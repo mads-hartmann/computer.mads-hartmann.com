@@ -41,50 +41,34 @@ eval "$(ssh-agent -s)"
 echo "Host *
   AddKeysToAgent yes
   UseKeychain yes
-  IdentityFile ~/.ssh/id_rsa" > ~/.ssh/config2
+  IdentityFile ~/.ssh/id_rsa" > ~/.ssh/config
 ssh-add -K ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub | pbcopy
 open "https://github.com/settings/keys"
 ```
 
-```
-git config --global user.email "mads379@gmail.com"
-git config --global user.name "Mads Hartmann"
-```
+## Dotfiles
 
-## Bash setup
+Based on [this article](https://www.atlassian.com/git/tutorials/dotfiles).
 
 ```
-https://askubuntu.com/a/121075
-.profile
-.bashrc
-```
+# Set up the bare repository
+git clone --bare git@github.com:mads-hartmann/dotfilesv2.git
+alias config='/usr/bin/git --git-dir=$HOME/dotfilesv2.git/ --work-tree=$HOME'
 
-```
-brew install gnu-sed coreutils
-PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-```
 
-```
-brew install bash-completion
-```
+# Move things to backup directory for review later.
+mkdir -p .config-backup && \
+config checkout 2>&1 | grep '\t' | awk '{gsub(/\t/,"", $0);print}' | xargs -I{} sh -c 'mkdir -p ".config-backup/$(dirname "{}")" && mv "{}" ".config-backup/{}"'
 
-```
-brew install starship
-brew cask install font-fira-mono-for-powerline
-echo 'eval "$(starship init bash)"' > ~/.bashrc
+# Now checkout the dotfiles
+config checkout
 ```
 
 ## Visual studio code
 
 ```
 brew cask install visual-studio-code
-```
-
-I need my keybindings
-
-```
-TODO: They're too verbose to paste in here IMO.
 ```
 
 I have a few extensions that I definitely need:
