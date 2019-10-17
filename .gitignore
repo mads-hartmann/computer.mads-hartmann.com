@@ -1,0 +1,10 @@
+.DS_Store
+.sass-cache
+.jekyll-cache
+.vscode
+
+_site
+
+# bundler related things
+.bundle/
+vendor/

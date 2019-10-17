@@ -1,0 +1,13 @@
+title: computer.mads-hartmann.com
+email: hello@mads-hartmann.com
+description: >-
+  My computer.
+baseurl: ""
+url: "https://computer.mads-hartmann.com"
+
+header_pages:
+  - setup.md
+
+plugins:
+  - jekyll-toc
+  - jekyll-seo-tag
