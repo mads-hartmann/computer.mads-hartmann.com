@@ -11,3 +11,6 @@ header_pages:
 plugins:
   - jekyll-toc
   - jekyll-seo-tag
+
+collections:
+  - setup_steps
