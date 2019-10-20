@@ -1,7 +1,5 @@
 # computer.mads-hartmann.com
 
-WIP. Not done.
-
 ```
 gem install bundler
 bundle install
