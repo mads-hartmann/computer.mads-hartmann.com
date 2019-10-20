@@ -1,6 +1,5 @@
 ---
 title: Setting up a new mac
-permalink: /setting-up-a-new-mac
 ---
 
 Here we go again.

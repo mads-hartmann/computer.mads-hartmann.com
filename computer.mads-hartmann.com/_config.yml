@@ -3,6 +3,7 @@ email: hello@mads-hartmann.com
 description: My computer
 baseurl: ""
 url: "https://computer.mads-hartmann.com"
+permalink: pretty
 
 plugins:
   - jekyll-toc
