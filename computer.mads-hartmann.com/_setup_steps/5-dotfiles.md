@@ -1,7 +1,10 @@
 ---
 title: Setting up dotfiles
 ---
+
 Based on [this article](https://www.atlassian.com/git/tutorials/dotfiles).
+
+I use a bare git repostiory in my $HOME folder to track my dotfiler, together with a convenience alias for git named `config`.
 
 ```sh
 # Set up the bare repository

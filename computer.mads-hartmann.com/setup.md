@@ -6,7 +6,7 @@ permalink: /setting-up-a-new-mac
 Here we go again.
 
 {% for step in site.setup_steps %}
-  <details open>
+  <details>
     <summary>{{step.title}}</summary>
     {{step.content | markdownify }}
   </details>

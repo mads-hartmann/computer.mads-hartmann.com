@@ -5,7 +5,8 @@ title: Other essential apps
 There's few tools I usually always use:
 
 ```sh
-brew install coreutils # common gnu utilities. Almost certainly needed for bash scripts that run on Linux (CI).
+# common gnu utilities. Almost certainly needed for bash scripts that run on Linux (CI).
+brew install coreutils
 ```
 
 And some other ones:
