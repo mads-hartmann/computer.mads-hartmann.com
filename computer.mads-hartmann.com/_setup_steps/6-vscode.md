@@ -2,6 +2,8 @@
 title: Visual Studio Code
 ---
 
+Sorry Emacs, I've converted:
+
 ```
 brew cask install visual-studio-code
 ```
@@ -15,4 +17,4 @@ code --install-extension \
   eamodio.gitlens
 ```
 
-I have a few basic settings that I can't live without.
+The rest of the configuration lives in my dotfiles, so they should already be in place.
