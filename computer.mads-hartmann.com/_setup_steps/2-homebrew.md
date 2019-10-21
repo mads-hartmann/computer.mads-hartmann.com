@@ -13,6 +13,7 @@ Install [homebrew](https://brew.sh) so we can install all the other thigns we'll
 
 ```
 brew cask install iterm2
+brew install zsh-completions
 ```
 
 Install a few things from the app store
