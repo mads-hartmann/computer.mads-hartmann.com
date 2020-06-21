@@ -1,5 +1,5 @@
 ---
-title: SSH Config
+title: SSH configuration
 ---
 Mostly taken from [Githubs documentation](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
