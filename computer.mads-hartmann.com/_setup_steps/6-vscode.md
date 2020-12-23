@@ -5,7 +5,7 @@ title: Visual Studio Code
 Sorry Emacs, I've converted:
 
 ```
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 ```
 
 I have a few extensions that I definitely need:
