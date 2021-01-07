@@ -4,13 +4,13 @@ title: Visual Studio Code
 
 Sorry Emacs, I've converted:
 
-```
+```sh
 brew install --cask visual-studio-code
 ```
 
 I have a few extensions that I definitely need:
 
-```
+```sh
 code --install-extension \
   EditorConfig.EditorConfig \
   letrieu.expand-region \

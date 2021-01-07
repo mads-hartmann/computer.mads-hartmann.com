@@ -2,7 +2,7 @@
 title: Install Homebrew & essential apps
 ---
 
-Install [homebrew](https://brew.sh) so we can install all the other thigns we'll need:
+Install [homebrew](https://brew.sh) so we can install all the other things we'll need:
 
 ```sh
 /usr/bin/ruby \
@@ -22,10 +22,14 @@ brew install svn # Needed for font-fira-mono-for-powerline
 brew install font-fira-mono-for-powerline
 ```
 
+I use [Docker](https://www.docker.com)
+
 ```sh
 brew install --cask docker
 ```
 
-Install a few things from the app store
+I almost always end up needed some of the gnu utilities when writing scripts that should work on Linux (e.g. for CI)
 
-- 1Password. I use it for all my credentials
+```sh
+brew install coreutils
+```

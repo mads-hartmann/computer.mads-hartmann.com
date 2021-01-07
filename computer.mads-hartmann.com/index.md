@@ -22,11 +22,17 @@ I've tried a lot of different approaches to managing my dotfiles over the years.
 
 ## Setting up a new mac
 
+<ol>
+  {% for step in site.setup_steps %}
+  <li>
+    <a href="#{{ step.title | slugify }}">{{step.title}}</a>
+  </li>
+  {% endfor %}
+</ol>
+
 {% for step in site.setup_steps %}
-  <details>
-    <summary>{{step.title}}</summary>
-    {{step.content | markdownify }}
-  </details>
+  <h3 id="{{ step.title | slugify }}">  {{step.title}}</h3>
+  {{step.content | markdownify }}
 {% endfor %}
 
 [^1]: Please let this be the final version.
