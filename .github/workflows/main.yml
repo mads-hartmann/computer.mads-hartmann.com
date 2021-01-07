@@ -15,7 +15,7 @@ jobs:
       - id: install-aws-cli
         uses: unfor19/install-aws-cli-action@v1
         with:
-          version: 2
+          version: "2.1.16"
           verbose: true
       - name: Install bundler
         run: gem install bundler
