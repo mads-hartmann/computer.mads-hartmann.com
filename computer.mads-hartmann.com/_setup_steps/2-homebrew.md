@@ -34,7 +34,7 @@ I almost always end up needed some of the gnu utilities when writing scripts tha
 brew install coreutils
 ```
 
-I use [cheat](https://github.com/chubin/cheat.sh) and [tldr](https://github.com/tldr-pages/tldr) to look common tasks for many of the standard UNIX tools.
+I use [cheat](https://github.com/chubin/cheat.sh) and [tldr](https://github.com/tldr-pages/tldr) to look up examples of common use-cases for tools.
 
 ```sh
 brew install cheat tldr
