@@ -1,5 +1,5 @@
 ---
-title: Install Homebrew & essential apps
+title: Install Homebrew & essential tools
 ---
 
 Install [homebrew](https://brew.sh) so we can install all the other things we'll need:
@@ -32,4 +32,16 @@ I almost always end up needed some of the gnu utilities when writing scripts tha
 
 ```sh
 brew install coreutils
+```
+
+I use [cheat](https://github.com/chubin/cheat.sh) and [tldr](https://github.com/tldr-pages/tldr) to look common tasks for many of the standard UNIX tools.
+
+```sh
+brew install cheat tldr
+```
+
+I use [asdf](https://asdf-vm.com) to manage different language versions and switching between them.
+
+```sh
+brew install asdf
 ```

@@ -1,5 +1,5 @@
 ---
-title: Install command-line tools
+title: Install XCode command-line tools
 ---
 
 Install all the command-line tools like `make`, `git`, etc.
