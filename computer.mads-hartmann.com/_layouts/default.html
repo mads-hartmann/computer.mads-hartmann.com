@@ -20,20 +20,15 @@
     </head>
 
     <body>
-        <header></header>
-
         <nav>
             {{ content | toc_only }}
         </nav>
-
         <main aria-label="Content" class="page-content">
             {% if page.title %}
                 <h1>{{ page.title }}</h1>
             {% endif %}
             {{ content | inject_anchors }}
         </main>
-
-        <footer></footer>
     </body>
 
 </html>
