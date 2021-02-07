@@ -9,9 +9,6 @@ plugins:
   - jekyll-toc
   - jekyll-seo-tag
 
-collections:
-  - setup_steps
-
 defaults:
   -
     scope:
@@ -25,3 +22,8 @@ port: 4000
 host: 0.0.0.0
 baseurl: "" # does not include hostname
 show_dir_listing: false
+
+# Config for jekyll-toc
+toc:
+  # I don't want the title in the toc
+  min_level: 2
