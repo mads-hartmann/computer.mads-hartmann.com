@@ -10,7 +10,6 @@ services:
         "jekyll",
         "serve",
         "--watch",
-        "--incremental",
         "--drafts",
         "--source",
         "/usr/src/app/computer.mads-hartmann.com",

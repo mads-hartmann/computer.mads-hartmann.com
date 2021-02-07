@@ -17,5 +17,5 @@ bundle install
 bundle exec jekyll serve \
     --watch \
     --drafts \
-    --source mads-hartmann.com
+    --source computer.mads-hartmann.com
 ```
