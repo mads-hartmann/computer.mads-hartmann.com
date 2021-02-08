@@ -21,6 +21,8 @@ nav {
   min-width: 300px;
   justify-self: right;
 
+  overflow-y: scroll;
+
   /* Make the navigation sticky */
   position: sticky;
   top: 0;
