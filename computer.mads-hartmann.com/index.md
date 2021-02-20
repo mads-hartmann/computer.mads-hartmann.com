@@ -225,8 +225,19 @@ I have a few extensions that I definitely need:
 ```sh
 code --install-extension \
   EditorConfig.EditorConfig \
-  letrieu.expand-region \
-  eamodio.gitlens
+  letrieu.expand-region
+```
+
+I use [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) as it has a lot of more advanced Git features that are really handy
+
+```sh
+code --install-extension eamodio.gitlens
+```
+
+I use the [draw.io integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio) to be able to edit SVGs using [draw.io](https://draw.io) inside of VSCode; this makes it really easy to embed diagrams in your documentation as SVGs while still being able to edit them - and if you don't use VSCode you can just use [draw.io](https://draw.io) in your browser.
+
+```sh
+code --install-extension hediet.vscode-drawio
 ```
 
 The rest of the configuration lives in my dotfiles, so they should already be in place.
