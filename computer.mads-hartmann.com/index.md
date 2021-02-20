@@ -220,12 +220,10 @@ Sorry Emacs, I've converted:
 brew install --cask visual-studio-code
 ```
 
-I have a few extensions that I definitely need:
+I use the [EditorConfig](https://editorconfig.org) [extension](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig).
 
 ```sh
-code --install-extension \
-  EditorConfig.EditorConfig \
-  letrieu.expand-region
+code --install-extension EditorConfig.EditorConfig
 ```
 
 I use [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) as it has a lot of more advanced Git features that are really handy
