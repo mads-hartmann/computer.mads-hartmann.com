@@ -242,9 +242,8 @@ The rest of the configuration lives in my dotfiles, so they should already be in
 
 ### Other essential apps
 
-- [Alfred](https://www.alfredapp.com). I use this as an app launcher, dictionary, clipboard manager.
+- [Raycast](https://raycast.com/) A lovely tool which helps you control your apps and OS. Replaced my usage of Alfred and BetterSnapTool.
 - [TaskPaper](https://www.taskpaper.com)
-- [BetterSnapTool](https://apps.apple.com/us/app/bettersnaptool/id417375580)
 - [TablePlus](https://tableplus.com)
 
 [^1]: Please let this be the final version.
