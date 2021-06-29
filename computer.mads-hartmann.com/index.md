@@ -50,7 +50,7 @@ I use the [Fira Mono for Powerline](https://github.com/powerline/fonts) at the m
 
 ```sh
 brew install svn # Needed for font-fira-mono-for-powerline
-brew install font-fira-mono-for-powerline
+brew install homebrew/cask-fonts/font-fira-mono-for-powerline
 ```
 
 I use [Docker](https://www.docker.com)
