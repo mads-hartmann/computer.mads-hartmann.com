@@ -2,13 +2,11 @@
 
 How I setup my computer.
 
-## With docker
+## With Gitpod
 
-```sh
-docker-compose up --build --renew-anon-volumes
-```
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/mads-hartmann/computer.mads-hartmann.com)
 
-## Without docker
+## Without Gitpod
 
 This depends on having [Ruby](https://www.ruby-lang.org/en/) and [Bundler](https://rubygems.org/gems/bundler) installed locally.
 
