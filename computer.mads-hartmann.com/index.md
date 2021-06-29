@@ -243,7 +243,7 @@ The rest of the configuration lives in my dotfiles, so they should already be in
 ### Other essential apps
 
 - [Raycast](https://raycast.com/) A lovely tool which helps you control your apps and OS. Replaced my usage of Alfred and BetterSnapTool.
-- [TaskPaper](https://www.taskpaper.com)
+- [Things](https://culturedcode.com/things/)
 - [TablePlus](https://tableplus.com)
 
 [^1]: Please let this be the final version.
