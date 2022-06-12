@@ -1,9 +1,3 @@
-FROM ruby:3.0.0
+FROM gitpod/workspace-full:latest
 
-# throw errors if Gemfile has been modified since Gemfile.lock
-RUN bundle config --global frozen 1
-
-WORKDIR /usr/src/app
-
-ADD Gemfile Gemfile.lock ./
-RUN bundle install
+RUN /bin/bash -l -c ". $HOME/.rvm/scripts/rvm && rvm install 3.1.2 && rvm use 3.1.2 && gem install bundler -v 2.3.15 && bundle config --global frozen 1"
