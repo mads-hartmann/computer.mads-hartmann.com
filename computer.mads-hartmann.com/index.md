@@ -11,7 +11,7 @@ I've tried a lot of different approaches to managing the configuration of my com
 
 - I automate as little of the initial setup as possible (installing apps etc.). Spending time automating something that it's quite unlikely I'll ever run again on the same OS, the same hardware, or even the same desired end goal, just wasn't worth the effort for me. Instead I maintain a little setup guide for the few occasions where I actually have to set up a new mac from scratch (see below).
 
-- I use a [bare git](https://git-scm.com/docs/git-clone#Documentation/git-clone.txt---bare) repository - [mads-hartmann/dotfilesv2](https://github.com/mads-hartmann/dotfilesv2) - in my `$HOME` folder for the actual dotfiles 
+- I use a [bare git](https://git-scm.com/docs/git-clone#Documentation/git-clone.txt---bare) repository - [mads-hartmann/dotfilesv2](https://github.com/mads-hartmann/dotfilesv2) - in my `$HOME` folder for the actual dotfiles
 
 - I use ZSH as my shell (that's the default since macOS Catalina). I use Spaceship as my prompt configuration.
 
@@ -90,35 +90,23 @@ sudo chmod -R 755 /usr/local/share/zsh/site-functions /usr/local/share /usr/loca
 Install [starship](http://starship.rs)
 
 ```sh
-brew install starship 
+brew install starship
 ```
 
 ### SSH
 
-Mostly taken from [Githubs documentation](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+I use 1Password to manage my SSH keys ([docs](https://developer.1password.com/docs/ssh)) and rely on their SSH agent ([docs](https://developer.1password.com/docs/ssh/agent)). For the agent to work the following is placed in `~/.ssh/config`:
 
-Tell sshd to use the macOS keychain:
-
-```sh
-echo "Host *
-    AddKeysToAgent yes
-    UseKeychain yes
-    IdentityFile ~/.ssh/id_rsa" > ~/.ssh/config
+```
+Host *
+  IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 ```
 
-Generate a new SSH key and add it to your keychain:
+To verify it works run the following
 
 ```sh
-ssh-keygen -t rsa -b 4096 -C "mads379@gmail.com"
-eval "$(ssh-agent -s)"
-ssh-add -K ~/.ssh/id_rsa
-```
-
-Tell Github about your new key:
-
-```sh
-cat ~/.ssh/id_rsa.pub | pbcopy
-open "https://github.com/settings/keys"
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+ssh-add -l
 ```
 
 ### Setting up dotfiles
