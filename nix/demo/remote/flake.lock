@@ -3,11 +3,11 @@
     "computer": {
       "flake": false,
       "locked": {
-        "lastModified": 1666790946,
-        "narHash": "sha256-I/eGF3gfBIxWE2HcVXwYyzr9qtiQ5K5N61NTgHW0jbY=",
+        "lastModified": 1666984469,
+        "narHash": "sha256-2k/2GgOkmCrXhamhddMt/dM9ibfL0trwGqiUJjTK+JQ=",
         "owner": "mads-hartmann",
         "repo": "computer.mads-hartmann.com",
-        "rev": "b755b1946aa6b0b01a206e7943e16770af0ef3b6",
+        "rev": "c539f3bed196b0ea797f47012c0775dd469274ce",
         "type": "github"
       },
       "original": {
@@ -19,11 +19,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1666789390,
-        "narHash": "sha256-dp8//IasTFOWemhD4DOvSqDlDVev9+Qmdv2HJQibAPk=",
+        "lastModified": 1666981147,
+        "narHash": "sha256-mlQM2aViOLoxSeQJWUzy6TDw8yERVGCho5S7mjrzDzE=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "8167d512ed521eddf10d5837bf77e7aefcbd5727",
+        "rev": "2b544f67efd7b507c883c3dd1e5ee55921d542b3",
         "type": "github"
       },
       "original": {

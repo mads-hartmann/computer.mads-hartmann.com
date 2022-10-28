@@ -1,0 +1,86 @@
+{
+  "nodes": {
+    "help": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-aoyZWXrBaTwr6iaWmgb/NPszQZ8pe81IWrmeyGBmoD4=",
+        "path": "../../../nix/fragments/help",
+        "type": "path"
+      },
+      "original": {
+        "path": "../../../nix/fragments/help",
+        "type": "path"
+      }
+    },
+    "kubernetes": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-ae1UatTNCSH7fQLTZwq8lRViMjVOz/wBCvt41WINYT8=",
+        "path": "../../../nix/fragments/kubernetes",
+        "type": "path"
+      },
+      "original": {
+        "path": "../../../nix/fragments/kubernetes",
+        "type": "path"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1666926733,
+        "narHash": "sha256-+gYfOEnQVISPDRNoWm2VJD5OEuTUySt48RchLpvm61o=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f44ba1be526c8da9e79a5759feca2365204003f6",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1666926733,
+        "narHash": "sha256-+gYfOEnQVISPDRNoWm2VJD5OEuTUySt48RchLpvm61o=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f44ba1be526c8da9e79a5759feca2365204003f6",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1666981147,
+        "narHash": "sha256-mlQM2aViOLoxSeQJWUzy6TDw8yERVGCho5S7mjrzDzE=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "2b544f67efd7b507c883c3dd1e5ee55921d542b3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "help": "help",
+        "kubernetes": "kubernetes",
+        "nixpkgs": "nixpkgs_3"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
