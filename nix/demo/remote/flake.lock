@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "computer": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1666790946,
+        "narHash": "sha256-I/eGF3gfBIxWE2HcVXwYyzr9qtiQ5K5N61NTgHW0jbY=",
+        "owner": "mads-hartmann",
+        "repo": "computer.mads-hartmann.com",
+        "rev": "b755b1946aa6b0b01a206e7943e16770af0ef3b6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mads-hartmann",
+        "ref": "nix",
+        "repo": "computer.mads-hartmann.com",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1666789390,
+        "narHash": "sha256-dp8//IasTFOWemhD4DOvSqDlDVev9+Qmdv2HJQibAPk=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "8167d512ed521eddf10d5837bf77e7aefcbd5727",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "computer": "computer",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
