@@ -12,7 +12,7 @@ This folder contains reusable [devenv](https://devenv.sh/) for various tasks; th
 
 ## Using these devens
 
-TODO
+See [./demo/remote/devenv.yaml](./demo/remote/devenv.yaml).
 
 ## Working on the devens
 
