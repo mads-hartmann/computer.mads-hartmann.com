@@ -9,3 +9,6 @@ _site
 # bundler related things
 .bundle/
 vendor/
+
+# Devenv related files
+.devenv*
