@@ -1,5 +1,20 @@
 {
   "nodes": {
+    "computer": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1668622479,
+        "owner": "mads-hartmann",
+        "repo": "computer.mads-hartmann.com",
+        "rev": "3e5521da0b27569429f5686b879ff0a4655fdb69",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mads-hartmann",
+        "repo": "computer.mads-hartmann.com",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "locked": {
         "lastModified": 1667077288,
@@ -64,6 +79,7 @@
     },
     "root": {
       "inputs": {
+        "computer": "computer",
         "nixpkgs": "nixpkgs",
         "pre-commit-hooks": "pre-commit-hooks"
       }
