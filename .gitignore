@@ -12,3 +12,5 @@ vendor/
 
 # Devenv related files
 .devenv*
+.devenv*
+devenv.local.nix
