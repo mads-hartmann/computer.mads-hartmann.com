@@ -1,15 +1,1 @@
-image:
-  file: .gitpod.Dockerfile
-
-tasks:
-  - init: bundle install
-    command: bundle exec jekyll serve --watch --incremental --drafts --source computer.mads-hartmann.com
-
-github:
-  prebuilds:
-    master: true
-    branches: true
-
-ports:
-  - port: 4000
-    onOpen: open-preview
+image: madshartmann/gitpod-nix-base:2

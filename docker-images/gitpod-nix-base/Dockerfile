@@ -47,7 +47,8 @@ USER gitpod
 # While the multi-user installation provides better security, it adds additional
 # complexity which wasn't worth the trade-off for my fairly simple usage of nix-shell.
 #
-RUN curl https://nixos.org/releases/nix/nix-2.11.0/install -o install-nix \
+ARG NIX_VERSION=2.12.0
+RUN curl https://nixos.org/releases/nix/nix-${NIX_VERSION}/install -o install-nix \
     && chmod +x ./install-nix \
     && ./install-nix --no-daemon \
     && rm ./install-nix \
@@ -55,9 +56,14 @@ RUN curl https://nixos.org/releases/nix/nix-2.11.0/install -o install-nix \
     # that is not considered free.
     && mkdir -p /home/gitpod/.config/nixpkgs \
     && echo '{ allowUnfree = true; }' >> /home/gitpod/.config/nixpkgs/config.nix \
-    # Enable support for Flakes
+    # Enable support for Flakes and the new Nix Command
     && mkdir -p /home/gitpod/.config/nix \
     && echo 'experimental-features = nix-command flakes' >> /home/gitpod/.config/nix/nix.conf \
     # Load nix as part for all bash sessions for the Gitpod user
-    # This makes nix-shell, nix-env, etc. available
+    # This makes nix, nix-shell, nix-env, etc. available
     && echo '. /home/gitpod/.nix-profile/etc/profile.d/nix.sh' >> /home/gitpod/.bashrc
+
+# Install devenv
+ARG DEVENV_VERSION=v0.4
+RUN . /home/gitpod/.nix-profile/etc/profile.d/nix.sh && \
+    nix profile install github:cachix/devenv/${DEVENV_VERSION}
